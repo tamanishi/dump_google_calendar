@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dump_google_calendar"
+version = "0.1.0"
+description = ""
+authors = ["Masayuki Sunahara <tamanishi@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+google-api-python-client = "^2.20.0"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.dev-dependencies]
+google-api-python-client = "^2.19.1"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.4.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
