@@ -1,20 +1,19 @@
-[tool.poetry]
-name = "dump_google_calendar"
+[project]
+name = "dump-google-calendar"
 version = "0.1.0"
-description = ""
-authors = ["Masayuki Sunahara <tamanishi@gmail.com>"]
-license = "MIT"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-google-api-python-client = "^2.20.0"
-python-dateutil = "^2.8.2"
-
-[tool.poetry.dev-dependencies]
-google-api-python-client = "^2.19.1"
-google-auth-httplib2 = "^0.1.0"
-google-auth-oauthlib = "^0.4.6"
+description = "Add a short description here"
+authors = [
+    { name = "Masayuki Sunahara", email = "tamanishi@gmail.com" }
+]
+dependencies = ["python-dateutil~=2.8.2", "google-api-python-client~=2.87.0", "google-auth-oauthlib~=1.0.0"]
+readme = "README.md"
+requires-python = ">= 3.8"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+[tool.hatch.metadata]
+allow-direct-references = true
