@@ -5,7 +5,7 @@ description = "Add a short description here"
 authors = [
     { name = "Masayuki Sunahara", email = "tamanishi@gmail.com" }
 ]
-dependencies = ["python-dateutil~=2.8.2", "google-api-python-client~=2.87.0", "google-auth-oauthlib~=1.0.0"]
+dependencies = ["python-dateutil~=2.8.2", "google-api-python-client~=2.87.0", "google-auth-oauthlib~=1.0.0", "black~=23.3.0"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
